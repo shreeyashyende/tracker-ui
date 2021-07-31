@@ -1,8 +1,7 @@
 import React from 'react';
 import {
   Navbar, Nav, NavItem, NavDropdown,
-  MenuItem, Glyphicon,
-  Grid, Col,
+  MenuItem, Glyphicon, Grid, Col,
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -60,13 +59,14 @@ function Footer() {
       <p className="text-center">
         Full source code available at this
         {' '}
-        <a href="https://github.com/vasansr/pro-mern-stack-2">
+        <a href="https://github.ccs.neu.edu/NEU-CS5610-SU21/YashKothari-Book">
           GitHub repository
         </a>
       </p>
     </small>
   );
 }
+
 
 export default class Page extends React.Component {
   static async fetchData(cookie) {
@@ -101,7 +101,7 @@ export default class Page extends React.Component {
   render() {
     const { user } = this.state;
     if (user == null) return null;
-
+    
     return (
       <div>
         <NavBar user={user} onUserChange={this.onUserChange} />

@@ -5,6 +5,7 @@ import {
   Button, Glyphicon, Tooltip, OverlayTrigger, Table,
 } from 'react-bootstrap';
 
+
 import UserContext from './UserContext.js';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -58,8 +59,8 @@ class IssueRowPlain extends React.Component {
           <OverlayTrigger delayShow={1000} overlay={closeTooltip}>
             <Button disabled={disabled} bsSize="xsmall" onClick={onClose}>
               <Glyphicon glyph="remove" />
-            </Button>
-          </OverlayTrigger>
+          </Button>
+        </OverlayTrigger>
           {' '}
           <OverlayTrigger delayShow={1000} overlay={deleteTooltip}>
             <Button disabled={disabled} bsSize="xsmall" onClick={onDelete}>
